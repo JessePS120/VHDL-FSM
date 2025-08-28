@@ -1,5 +1,6 @@
 ## VHDL-FSM Introduction 
-This repository contains VHDL source files developed in Intel Quartus for practicing and learning digital design concepts. The project implements a Moore finite state machine and integrates several fundamental digital components. <img width="425" height="233" alt="image" src="https://github.com/user-attachments/assets/ab6a4627-ae13-40b4-8e53-ac4a7300f77c" />
+This repository contains VHDL source files developed in Intel Quartus for practicing and learning digital design concepts. The project implements a Moore finite state machine and integrates several fundamental digital components. 
+<img width="425" height="233" alt="image" src="https://github.com/user-attachments/assets/ab6a4627-ae13-40b4-8e53-ac4a7300f77c" />
 
 Picture of Moore State Machine. 
 The repository includes the following main modules:
