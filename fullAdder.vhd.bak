@@ -1,0 +1,16 @@
+Library ieee; 
+USE ieee.std_logic_1164.all; 
+
+ENTITY fullAdder IS 
+	PORT(	X     : IN STD_LOGIC; 
+			Y     : IN STD_LOGIC; 
+			Cin   : IN STD_LOGIC; 
+			Sum   : OUT STD_LOGIC; 
+			COUT  : OUT STD_LOGIC); 
+END fullAdder; 
+
+ARCHITECTURE Behavior of fullAdder IS 
+BEGIN
+
+
+END Behavior; 

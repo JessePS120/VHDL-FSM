@@ -1,0 +1,16 @@
+Library ieee; 
+USE ieee.std_logic_1164.all;
+
+ENTITY GateFSM IS 
+	PORT(Start, Clk, Reset_SM : IN STD_LOGIC; 
+			  Control : OUT std_logic_vector(3 downto 0); 
+END GateFSM; 
+
+ARCHITECTURE Gates OF GateFSM IS 
+
+COMPONENT D_Flip_Flop IS 
+	PORT(Clk, D, Enable, Reset : IN STD_LOGIC; 
+									 Q : OUT STD_LOGIC); 
+END COMPONENT; 
+
+

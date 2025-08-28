@@ -1,0 +1,24 @@
+Library ieee; 
+USE ieee.std_logic_1164.all;
+
+ENTITY D-Flip-Flop IS 
+	PORT(D, Clk, Enable, Reset : IN STD_LOGIC; 
+									 Q : OUT STD_LOGIC); 
+END D-Flip-Flop; 
+
+ARCHITECTURE DFF OF D-Flip-Flip IS 
+BEGIN 
+
+PROCESS(D, Clk, Enable, Reset) 
+	BEGIN 
+	
+	wait for 2ns; 
+		
+	IF(Enable = '1' AND Clk'EVENT AND Clk = '1') THEN Q <= D; 
+	END IF; 
+	IF(Reset = '1') THEN Q <= '0';
+	END IF; 		
+	
+	END PROCESS; 
+	
+END DFF; 

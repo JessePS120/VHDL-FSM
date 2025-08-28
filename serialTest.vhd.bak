@@ -1,0 +1,32 @@
+Library ieee; 
+USE ieee.std_logic_1164.all; 
+ENTITY serialTest IS 
+	PORT(in_a, in_b : IN std_logic_vector(3 downto 0);
+			expected  : IN  std_logic_vector(1 downto 0);  
+			Sum		 : OUT std_logic_vector(3 downto 0);
+			Carry 	 : OUT STD_LOGIC); 
+			
+END serialTest; 
+
+ARCHITECTURE TestBench OF serialTEST IS 
+COMPONENT serialAdder IS 
+	PORT(in_a, in_b : IN std_logic_vector(3 downto 0);
+			control 	 : IN std_logic_vector(1 downto 0); 
+			Clk 		 : IN STD_LOGIC;
+			Reset_al  : IN STD_LOGIC; 
+			Sum		 : OUT std_logic_vector(3 downto 0);
+			Carry 	 : OUT STD_LOGIC); 
+END COMPONENT; 
+
+SIGNAL control_TEMP  : std_logic_vector(1 downto 0); 
+SIGNAL Clk_TEMP 	   : STD_LOGIC; 
+SIGNAL Reset_al_TEMP : STD_LOGIC; 	
+
+BEGIN 
+	U1: serialAdder PORT MAP(in_a, in_b, control_TEMP, Clk_TEMP, Reset_al_TEMP, Sum, Carry); 
+			
+END serialAdder; 
+
+
+
+END ARCHITECTURE; 

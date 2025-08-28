@@ -1,0 +1,451 @@
+$comment
+	File created using the following command:
+		vcd file serialAdder.msim.vcd -direction
+$end
+$date
+	Tue Apr 30 23:13:31 2024
+$end
+$version
+	ModelSim Version 2020.1
+$end
+$timescale
+	1ps
+$end
+
+$scope module behavioralfsm_vhd_vec_tst $end
+$var wire 1 ! Clk $end
+$var wire 1 " Control [3] $end
+$var wire 1 # Control [2] $end
+$var wire 1 $ Control [1] $end
+$var wire 1 % Control [0] $end
+$var wire 1 & Reset_SM $end
+$var wire 1 ' Start $end
+
+$scope module i1 $end
+$var wire 1 ( gnd $end
+$var wire 1 ) vcc $end
+$var wire 1 * unknown $end
+$var wire 1 + devoe $end
+$var wire 1 , devclrn $end
+$var wire 1 - devpor $end
+$var wire 1 . ww_devoe $end
+$var wire 1 / ww_devclrn $end
+$var wire 1 0 ww_devpor $end
+$var wire 1 1 ww_Start $end
+$var wire 1 2 ww_Clk $end
+$var wire 1 3 ww_Reset_SM $end
+$var wire 1 4 ww_Control [3] $end
+$var wire 1 5 ww_Control [2] $end
+$var wire 1 6 ww_Control [1] $end
+$var wire 1 7 ww_Control [0] $end
+$var wire 1 8 \~QUARTUS_CREATED_GND~I_combout\ $end
+$var wire 1 9 \Clk~input_o\ $end
+$var wire 1 : \Clk~inputCLKENA0_outclk\ $end
+$var wire 1 ; \Reset_SM~input_o\ $end
+$var wire 1 < \Start~input_o\ $end
+$var wire 1 = \Current_State.IDLE~1_combout\ $end
+$var wire 1 > \WideOr0~0_combout\ $end
+$var wire 1 ? \Current_State.IDLE~3_combout\ $end
+$var wire 1 @ \Current_State.IDLE~0_combout\ $end
+$var wire 1 A \Current_State.IDLE~_emulated_q\ $end
+$var wire 1 B \Current_State.IDLE~2_combout\ $end
+$var wire 1 C \Current_State.IDLE~6_combout\ $end
+$var wire 1 D \Current_State.RESET~1_combout\ $end
+$var wire 1 E \Current_State.RESET~0_combout\ $end
+$var wire 1 F \Current_State.RESET~_emulated_q\ $end
+$var wire 1 G \Current_State.RESET~2_combout\ $end
+$var wire 1 H \Current_State.LOAD~0_combout\ $end
+$var wire 1 I \Current_State.LOAD~q\ $end
+$var wire 1 J \Current_State.SR1~q\ $end
+$var wire 1 K \Current_State.SR2~q\ $end
+$var wire 1 L \Current_State.SR3~q\ $end
+$var wire 1 M \Current_State.SR4~q\ $end
+$var wire 1 N \Current_State.READY~q\ $end
+$var wire 1 O \WideOr0~combout\ $end
+$var wire 1 P \ALT_INV_Current_State.READY~q\ $end
+$var wire 1 Q \ALT_INV_WideOr0~combout\ $end
+$var wire 1 R \ALT_INV_Current_State.RESET~_emulated_q\ $end
+$var wire 1 S \ALT_INV_Current_State.RESET~2_combout\ $end
+$var wire 1 T \ALT_INV_Current_State.LOAD~0_combout\ $end
+$var wire 1 U \ALT_INV_Current_State.IDLE~_emulated_q\ $end
+$var wire 1 V \ALT_INV_Current_State.IDLE~2_combout\ $end
+$var wire 1 W \ALT_INV_Current_State.RESET~0_combout\ $end
+$var wire 1 X \ALT_INV_WideOr0~0_combout\ $end
+$var wire 1 Y \ALT_INV_Current_State.IDLE~0_combout\ $end
+$var wire 1 Z \ALT_INV_Current_State.IDLE~6_combout\ $end
+$var wire 1 [ \ALT_INV_Current_State.RESET~1_combout\ $end
+$var wire 1 \ \ALT_INV_Current_State.IDLE~1_combout\ $end
+$var wire 1 ] \ALT_INV_Reset_SM~input_o\ $end
+$var wire 1 ^ \ALT_INV_Start~input_o\ $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0!
+1&
+0'
+0(
+1)
+x*
+1+
+1,
+1-
+1.
+1/
+10
+01
+02
+13
+x8
+09
+0:
+1;
+0<
+1=
+0>
+0?
+1@
+0A
+0B
+0C
+0D
+1E
+0F
+0G
+1H
+0I
+0J
+0K
+0L
+0M
+0N
+1O
+1P
+0Q
+1R
+1S
+0T
+1U
+1V
+0W
+1X
+0Y
+1Z
+1[
+0\
+0]
+1^
+04
+05
+06
+07
+0"
+0#
+0$
+0%
+$end
+#10000
+0&
+03
+0;
+1]
+0@
+0E
+0H
+1T
+1W
+1Y
+#20000
+1'
+11
+1<
+0^
+1C
+1H
+0T
+0Z
+0=
+1@
+1B
+1D
+1E
+1G
+0S
+0W
+0[
+0V
+0Y
+1\
+1?
+1>
+0C
+0H
+1T
+1Z
+0X
+15
+0?
+0@
+0E
+1#
+1W
+1Y
+#30000
+0'
+01
+0<
+1^
+#40000
+1!
+12
+19
+1:
+1F
+1I
+0R
+0G
+1S
+16
+0O
+1$
+1Q
+05
+0#
+17
+1%
+#50000
+0!
+02
+09
+0:
+#60000
+1!
+12
+19
+1:
+0I
+1J
+06
+0$
+#70000
+0!
+02
+09
+0:
+#80000
+1!
+12
+19
+1:
+0J
+1K
+#90000
+0!
+02
+09
+0:
+#100000
+1!
+12
+19
+1:
+0K
+1L
+#110000
+0!
+02
+09
+0:
+#120000
+1!
+12
+19
+1:
+0L
+1M
+#130000
+0!
+02
+09
+0:
+#140000
+1!
+12
+19
+1:
+0M
+1N
+0P
+0>
+1O
+0Q
+1X
+14
+1?
+1"
+07
+0%
+#150000
+0!
+02
+09
+0:
+#160000
+1!
+12
+19
+1:
+1A
+0N
+1P
+0U
+0B
+1>
+0O
+1Q
+0X
+1V
+04
+0>
+1O
+0?
+0"
+0Q
+1X
+17
+1?
+1%
+07
+0%
+#170000
+0!
+02
+09
+0:
+#180000
+1!
+12
+19
+1:
+#190000
+0!
+02
+09
+0:
+#200000
+1'
+11
+1<
+0^
+1C
+1H
+0T
+0Z
+1@
+1B
+1E
+1G
+0S
+0W
+0V
+0Y
+0A
+1>
+0C
+0H
+0F
+1R
+1T
+1Z
+0X
+1U
+15
+0?
+0@
+0E
+1#
+1W
+1Y
+#210000
+0'
+01
+0<
+1^
+#220000
+1!
+12
+19
+1:
+1F
+1I
+0R
+0G
+1S
+16
+0O
+1$
+1Q
+05
+0#
+17
+1%
+#230000
+0!
+02
+09
+0:
+#240000
+1!
+12
+19
+1:
+0I
+1J
+06
+0$
+#250000
+0!
+02
+09
+0:
+#260000
+1&
+13
+1;
+0]
+1=
+1@
+0B
+0D
+1E
+1H
+0T
+0W
+1[
+1V
+0Y
+0\
+1?
+0>
+1O
+0F
+0J
+1R
+0Q
+1X
+0?
+07
+0%
+#270000
+0&
+03
+0;
+1]
+0@
+0E
+0H
+1T
+1W
+1Y
+#320000

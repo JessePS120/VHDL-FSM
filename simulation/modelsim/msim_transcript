@@ -1,0 +1,89 @@
+# Reading pref.tcl
+# do serialAdder_run_msim_gate_vhdl.do
+# if {[file exists gate_work]} {
+# 	vdel -lib gate_work -all
+# }
+# vlib gate_work
+# vmap work gate_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work gate_work 
+# Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {serialAdder.vho}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 10:14:10 on May 02,2024
+# vcom -reportprogress 300 -93 -work work serialAdder.vho 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package VITAL_Timing
+# -- Loading package VITAL_Primitives
+# -- Loading package dffeas_pack
+# -- Loading package altera_primitives_components
+# -- Loading package altera_lnsim_components
+# -- Loading package cyclonev_atom_pack
+# -- Loading package cyclonev_components
+# -- Compiling entity serialAdder
+# -- Compiling architecture structure of serialAdder
+# End time: 10:14:10 on May 02,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vcom -93 -work work {C:/Users/Djbut/Documents/ECE HW + Labs/Bonus Lab/serialTest.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 10:14:10 on May 02,2024
+# vcom -reportprogress 300 -93 -work work C:/Users/Djbut/Documents/ECE HW + Labs/Bonus Lab/serialTest.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity serialTEST
+# -- Compiling architecture TestBench of serialTEST
+# ** Warning: C:/Users/Djbut/Documents/ECE HW + Labs/Bonus Lab/serialTest.vhd(47): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: C:/Users/Djbut/Documents/ECE HW + Labs/Bonus Lab/serialTest.vhd(55): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: C:/Users/Djbut/Documents/ECE HW + Labs/Bonus Lab/serialTest.vhd(59): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: C:/Users/Djbut/Documents/ECE HW + Labs/Bonus Lab/serialTest.vhd(63): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: C:/Users/Djbut/Documents/ECE HW + Labs/Bonus Lab/serialTest.vhd(69): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# End time: 10:14:10 on May 02,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 5
+# 
+# vsim -t 1ps -L altera -L altera_lnsim -L cyclonev -L gate_work -L work -voptargs="+acc"  serialTest
+# vsim -t 1ps -L altera -L altera_lnsim -L cyclonev -L gate_work -L work -voptargs=""+acc"" serialTest 
+# Start time: 10:14:10 on May 02,2024
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.serialtest(testbench)
+# Loading ieee.vital_timing(body)
+# Loading ieee.vital_primitives(body)
+# Loading altera.dffeas_pack
+# Loading altera.altera_primitives_components
+# Loading altera_lnsim.altera_lnsim_components
+# Loading cyclonev.cyclonev_atom_pack(body)
+# Loading cyclonev.cyclonev_components
+# Loading work.serialadder(structure)
+# Loading ieee.std_logic_arith(body)
+# Loading cyclonev.cyclonev_io_obuf(arch)
+# Loading cyclonev.cyclonev_io_ibuf(arch)
+# Loading cyclonev.cyclonev_clkena(behavior)
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)
+# Loading altera.dffeas(vital_dffeas)
+# 
+# add wave *
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: Djbut  Hostname: LAPTOP-QDDU6M9A  ProcessID: 158368
+#           Attempting to use alternate WLF file "./wlftw3rvb6".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftw3rvb6
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# ** Error: Expected Sum(2)Doesn't Match Calculated Sum(15)
+#    Time: 4101 ns  Iteration: 0  Instance: /serialtest
+# Break key hit
+# Simulation stop requested.
+# End time: 10:28:56 on May 02,2024, Elapsed time: 0:14:46
+# Errors: 1, Warnings: 2

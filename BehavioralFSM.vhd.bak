@@ -1,0 +1,15 @@
+Library ieee; 
+USE ieee.std_logic_1164.all;
+
+ENTITY BehavioralFSM IS 
+	PORT(Start, W, Clk, Reset_SM : IN STD_LOGIC; 
+			  Control : OUT std_logic_vector(3 downto 0)); 
+END BehavioralFSM; 
+
+ARCHITECTURE Behavior OF BehavioralFSM IS 
+BEGIN 
+
+
+
+
+END Behavior; 

@@ -1,0 +1,146 @@
+Info: Start Nativelink Simulation process
+
+========= EDA Simulation Settings =====================
+
+Sim Mode              :  Gate
+Family                :  cyclonev
+Quartus root          :  c:/intelfpga_lite/20.1/quartus/bin64/
+Quartus sim root      :  c:/intelfpga_lite/20.1/quartus/eda/sim_lib
+Simulation Tool       :  modelsim-altera
+Simulation Language   :  vhdl
+Version               :  93
+Simulation Mode       :  GUI
+Sim Output File       :  serialAdder.vho
+Sim SDF file          :  serialAdder__vhdl.sdo
+Sim dir               :  simulation\modelsim
+
+=======================================================
+
+Info: Starting NativeLink simulation with ModelSim-Altera software
+Sourced NativeLink script c:/intelfpga_lite/20.1/quartus/common/tcl/internal/nativelink/modelsim.tcl
+Warning: File serialAdder_run_msim_gate_vhdl.do already exists - backing up current file as serialAdder_run_msim_gate_vhdl.do.bak11
+Probing transcript
+ModelSim-Altera Info: # Reading pref.tcl
+ModelSim-Altera Info: # do serialAdder_run_msim_gate_vhdl.do
+ModelSim-Altera Info: # if {[file exists gate_work]} {
+ModelSim-Altera Info: # 	vdel -lib gate_work -all
+ModelSim-Altera Info: # }
+ModelSim-Altera Info: # vlib gate_work
+ModelSim-Altera Info: # vmap work gate_work
+ModelSim-Altera Info: # Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+ModelSim-Altera Info: # vmap work gate_work 
+ModelSim-Altera Info: # Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+ModelSim-Altera Info: # Modifying modelsim.ini
+ModelSim-Altera Info: # 
+ModelSim-Altera Info: # vcom -93 -work work {serialAdder.vho}
+ModelSim-Altera Info: # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+ModelSim-Altera Info: # Start time: 10:14:10 on May 02,2024
+ModelSim-Altera Info: # vcom -reportprogress 300 -93 -work work serialAdder.vho 
+ModelSim-Altera Info: # -- Loading package STANDARD
+ModelSim-Altera Info: # -- Loading package TEXTIO
+ModelSim-Altera Info: # -- Loading package std_logic_1164
+ModelSim-Altera Info: # -- Loading package VITAL_Timing
+ModelSim-Altera Info: # -- Loading package VITAL_Primitives
+ModelSim-Altera Info: # -- Loading package dffeas_pack
+ModelSim-Altera Info: # -- Loading package altera_primitives_components
+ModelSim-Altera Info: # -- Loading package altera_lnsim_components
+ModelSim-Altera Info: # -- Loading package cyclonev_atom_pack
+ModelSim-Altera Info: # -- Loading package cyclonev_components
+ModelSim-Altera Info: # -- Compiling entity serialAdder
+ModelSim-Altera Info: # -- Compiling architecture structure of serialAdder
+ModelSim-Altera Info: # End time: 10:14:10 on May 02,2024, Elapsed time: 0:00:00
+ModelSim-Altera Info: # Errors: 0, Warnings: 0
+ModelSim-Altera Info: # 
+ModelSim-Altera Info: # vcom -93 -work work {C:/Users/Djbut/Documents/ECE HW + Labs/Bonus Lab/serialTest.vhd}
+ModelSim-Altera Info: # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+ModelSim-Altera Info: # Start time: 10:14:10 on May 02,2024
+ModelSim-Altera Info: # vcom -reportprogress 300 -93 -work work C:/Users/Djbut/Documents/ECE HW + Labs/Bonus Lab/serialTest.vhd 
+ModelSim-Altera Info: # -- Loading package STANDARD
+ModelSim-Altera Info: # -- Loading package TEXTIO
+ModelSim-Altera Info: # -- Loading package std_logic_1164
+ModelSim-Altera Info: # -- Loading package NUMERIC_STD
+ModelSim-Altera Info: # -- Compiling entity serialTEST
+ModelSim-Altera Info: # -- Compiling architecture TestBench of serialTEST
+ModelSim-Altera Warning: # ** Warning: C:/Users/Djbut/Documents/ECE HW + Labs/Bonus Lab/serialTest.vhd(47): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+ModelSim-Altera Warning: # ** Warning: C:/Users/Djbut/Documents/ECE HW + Labs/Bonus Lab/serialTest.vhd(55): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+ModelSim-Altera Warning: # ** Warning: C:/Users/Djbut/Documents/ECE HW + Labs/Bonus Lab/serialTest.vhd(59): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+ModelSim-Altera Warning: # ** Warning: C:/Users/Djbut/Documents/ECE HW + Labs/Bonus Lab/serialTest.vhd(63): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+ModelSim-Altera Warning: # ** Warning: C:/Users/Djbut/Documents/ECE HW + Labs/Bonus Lab/serialTest.vhd(69): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+ModelSim-Altera Info: # End time: 10:14:10 on May 02,2024, Elapsed time: 0:00:00
+ModelSim-Altera Info: # Errors: 0, Warnings: 5
+ModelSim-Altera Info: # 
+ModelSim-Altera Info: # vsim -t 1ps -L altera -L altera_lnsim -L cyclonev -L gate_work -L work -voptargs="+acc"  serialTest
+ModelSim-Altera Info: # vsim -t 1ps -L altera -L altera_lnsim -L cyclonev -L gate_work -L work -voptargs=""+acc"" serialTest 
+ModelSim-Altera Info: # Start time: 10:14:10 on May 02,2024
+ModelSim-Altera Info: # Loading std.standard
+ModelSim-Altera Info: # Loading std.textio(body)
+ModelSim-Altera Info: # Loading ieee.std_logic_1164(body)
+ModelSim-Altera Info: # Loading ieee.numeric_std(body)
+ModelSim-Altera Info: # Loading work.serialtest(testbench)
+ModelSim-Altera Info: # Loading ieee.vital_timing(body)
+ModelSim-Altera Info: # Loading ieee.vital_primitives(body)
+ModelSim-Altera Info: # Loading altera.dffeas_pack
+ModelSim-Altera Info: # Loading altera.altera_primitives_components
+ModelSim-Altera Info: # Loading altera_lnsim.altera_lnsim_components
+ModelSim-Altera Info: # Loading cyclonev.cyclonev_atom_pack(body)
+ModelSim-Altera Info: # Loading cyclonev.cyclonev_components
+ModelSim-Altera Info: # Loading work.serialadder(structure)
+ModelSim-Altera Info: # Loading ieee.std_logic_arith(body)
+ModelSim-Altera Info: # Loading cyclonev.cyclonev_io_obuf(arch)
+ModelSim-Altera Info: # Loading cyclonev.cyclonev_io_ibuf(arch)
+ModelSim-Altera Info: # Loading cyclonev.cyclonev_clkena(behavior)
+ModelSim-Altera Info: # Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)
+ModelSim-Altera Info: # Loading altera.dffeas(vital_dffeas)
+ModelSim-Altera Info: # 
+ModelSim-Altera Info: # add wave *
+ModelSim-Altera Warning: # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+ModelSim-Altera Info: #           File in use by: Djbut  Hostname: LAPTOP-QDDU6M9A  ProcessID: 158368
+ModelSim-Altera Info: #           Attempting to use alternate WLF file "./wlftw3rvb6".
+ModelSim-Altera Warning: # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+ModelSim-Altera Info: #           Using alternate file: ./wlftw3rvb6
+ModelSim-Altera Info: # view structure
+ModelSim-Altera Info: # .main_pane.structure.interior.cs.body.struct
+ModelSim-Altera Info: # view signals
+ModelSim-Altera Info: # .main_pane.objects.interior.cs.body.tree
+ModelSim-Altera Info: # run -all
+ModelSim-Altera Error: # ** Error: Expected Sum(2)Doesn't Match Calculated Sum(15)
+ModelSim-Altera Info: #    Time: 4101 ns  Iteration: 0  Instance: /serialtest
+ModelSim-Altera Info: # Break key hit
+ModelSim-Altera Info: # Simulation stop requested.
+ModelSim-Altera Info: # End time: 10:28:56 on May 02,2024, Elapsed time: 0:14:46
+ModelSim-Altera Info: # Errors: 1, Warnings: 2
+Error: Errors encountered while running modelsim do file
+Error: NativeLink simulation flow was NOT successful
+
+
+
+================The following additional information is provided to help identify the cause of error while running nativelink scripts=================
+Nativelink TCL script failed with errorCode:  1
+Nativelink TCL script failed with errorInfo:  1
+    (procedure "launch_sim" line 1)
+    invoked from within
+"launch_sim launch_args_hash"
+    ("eval" body line 1)
+    invoked from within
+"eval launch_sim launch_args_hash"
+    invoked from within
+"if [ info exists ::errorCode ] {
+                set savedCode $::errorCode
+                set savedInfo $::errorInfo
+                error $result $..."
+    invoked from within
+"if [catch {eval launch_sim launch_args_hash} result ] {
+            set status 1
+            if [ info exists ::errorCode ] {
+                set save..."
+    (procedure "run_sim" line 74)
+    invoked from within
+"run_sim run_sim_args_hash"
+    invoked from within
+"if [ info exists ::errorCode ] {
+            set savedCode $::errorCode
+            set savedInfo $::errorInfo
+            error "$result" $savedInfo ..."
+    (procedure "run_eda_simulation_tool" line 334)
+    invoked from within
+"run_eda_simulation_tool eda_opts_hash"

@@ -1,0 +1,11 @@
+Library ieee; 
+USE ieee.std_logic_1164.all; 
+ENTITY serialAdder IS 
+	PORT(in_a, in_b : IN std_logic_vector(0 to 3):
+			control 	 : IN std_logic_vector(0 to 1): 
+			clk 		 : IN STD_LOGIC: 
+			reset_al  : IN STD_LOGIC: 
+			Sum		 : OUT std_logic_vector(0 to 3): 
+			carry 	 : OUT STD_LOGIC); 
+			
+END serialAdder; 
